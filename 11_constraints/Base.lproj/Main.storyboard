@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xxx-yQ-Wpc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="9M4-op-RYX">
+            <objects>
+                <viewController id="Xxx-yQ-Wpc" customClass="ViewController" customModule="homeWork_13" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FEy-u5-Yxq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4I-Zo-kZp">
+                                <rect key="frame" x="0.0" y="621" width="209" height="249"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="57"/>
+                                <state key="normal" title="Left">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="leftButton:" destination="j5K-ti-jgb" eventType="touchUpInside" id="abn-Zc-spm"/>
+                                    <action selector="leftButton:" destination="Xxx-yQ-Wpc" eventType="touchUpInside" id="nzn-6C-dhG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lx0-4e-dem">
+                                <rect key="frame" x="217" y="621" width="197" height="249"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="57"/>
+                                <state key="normal" title="Right">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="rightButton:" destination="Xxx-yQ-Wpc" eventType="touchUpInside" id="cbO-vd-Dah"/>
+                                    <action selector="rightButton:" destination="j5K-ti-jgb" eventType="touchUpInside" id="s0c-Wt-gv6"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yan" translatesAutoresizingMaskIntoConstraints="NO" id="0T2-EC-7nt">
+                                <rect key="frame" x="0.0" y="44" width="414" height="468"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7MQ-fa-Brr" firstAttribute="trailing" secondItem="0T2-EC-7nt" secondAttribute="trailing" id="1fB-tk-97E"/>
+                            <constraint firstItem="7MQ-fa-Brr" firstAttribute="bottom" secondItem="0T2-EC-7nt" secondAttribute="bottom" constant="350" id="3Y4-wa-2Ig"/>
+                            <constraint firstItem="0T2-EC-7nt" firstAttribute="leading" secondItem="7MQ-fa-Brr" secondAttribute="leading" id="dDh-ns-yei"/>
+                            <constraint firstItem="0T2-EC-7nt" firstAttribute="top" secondItem="7MQ-fa-Brr" secondAttribute="top" id="qsp-dZ-wa9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7MQ-fa-Brr"/>
+                    </view>
+                    <connections>
+                        <outlet property="lionView" destination="0T2-EC-7nt" id="1Pz-zH-1SC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FFv-Md-A6P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="j5K-ti-jgb" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2057.971014492754" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="yan" width="450" height="450"/>
+    </resources>
+</document>
